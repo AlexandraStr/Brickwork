@@ -1,0 +1,58 @@
+/* Media query */
+/* phone  */
+@include respond-to(handhelds) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoMobil, 0, 0);
+    background-size: cover;
+
+    .login_area, h1 {
+      width: 100%;
+    }
+  }
+
+}
+@include respond-to(wide-handhelds) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoMobil, 0, 0);
+    background-size: cover;
+
+    .login_area, h1 {
+      width: 100%;
+    }
+  }
+}
+@include respond-to(notepad) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoTablet, 0, 0);
+    background-size: cover;
+
+    .login_area {
+      width: 180px;
+    }
+  }
+
+}
+@include respond-to(tablets) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoTablet, 0, 0);
+    background-size: cover;
+
+    .login_area {
+      width: 180px;
+    }
+  }
+}
+@include respond-to(desktop) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoTablet, 0, 0);
+
+    .login_area {
+      width: 180px;
+    }
+  }
+}

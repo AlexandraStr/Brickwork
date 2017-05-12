@@ -1,0 +1,25 @@
+/*    Mixini Sass   */
+
+
+@mixin background ($url,$offsetX,$offsetY){
+
+  background: $url $offsetX $offsetY no-repeat;
+
+}
+@mixin respond-to($media) {
+  @if $media == handhelds {
+    @media only screen and (max-width: 479px) { @content; }
+  }
+  @else if $media == wide-handhelds {
+    @media only screen and (min-width: 480px) and (max-width: 767px) { @content; }
+  }
+  @else if $media == notepad {
+    @media only screen and (min-width: 768px) and (max-width: 991px) { @content; }
+  }
+  @else if $media == tablets {
+    @media only screen and (min-width: 992px) and (max-width: 1439px) { @content; }
+  }
+  @else if $media == desktop {
+    @media only screen and (min-width: 1450px) { @content; }
+  }
+}

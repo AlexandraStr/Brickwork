@@ -1,0 +1,50 @@
+/*     ideas       */
+/*--------------------------------------------------------------------------------------------------*/
+* { box-sizing: border-box; }
+
+.ideas {
+  width: 98%;
+  margin: 0 auto;
+  max-width: 940px;
+  h1 {
+    margin-bottom: 10px;
+    color: $color3;
+    font: $fontSize2 $fontFamilyBold;
+    text-align: center;
+  }
+
+  .grid {
+    margin: 0 auto;
+    opacity:0;
+    transition:opacity 0.5s linear;
+
+     .grid-gutter {
+      width: 15px;
+    }
+
+      .grid-item {
+        padding: 2px;
+        margin-bottom: 15px;
+        transition-property: top;
+        transition-property: left;
+        transition-duration: 3s;
+
+        a {
+          position: absolute;
+          top: 43%;
+          left: 20%;
+          color: #ffffff;
+          font: $fontSize2 $fontFamilyRegular;
+        }
+        img {
+          display: block;
+          width: 100%;
+          border-radius: 10px;
+          box-shadow: 2px 2px 4px 0 #ccc;
+        }
+      }
+    }
+  }
+
+
+

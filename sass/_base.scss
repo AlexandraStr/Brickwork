@@ -1,0 +1,24 @@
+body{
+  background-color: #282828;
+}
+a{
+  text-align: center;
+  text-decoration: none;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+.content{
+  margin: auto;
+  /*  width: 1024px;*/
+  overflow: auto;
+  background-color: #ffffff;
+  vertical-align: middle;
+}
+
+.clearfix:after{
+  content:"";
+  display: block;
+  clear: both;
+}

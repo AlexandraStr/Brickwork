@@ -1,0 +1,97 @@
+/*      Header      */
+/*--------------------------------------------------------------------------------------------------*/
+
+.header {
+  position: relative;
+  height: 540px;
+  cursor: pointer;
+
+
+  .login_area {
+    margin: 50px auto;
+    position: relative;
+    text-align: center;
+    float: right;
+
+
+
+
+    a {
+      display: inline-block;
+      width: 85px;
+      height: 35px;
+      color: $color7;
+      font: $fontSize5 $fontFamilyRegular;
+      text-align: center;
+      box-sizing: border-box;
+      border: solid transparent;
+      border-radius: 20px;
+
+      &:before {
+        content: '';
+        display: inline-block;
+        height: 100%;
+        vertical-align: middle;
+      }
+
+      &:hover {
+        border: solid $color7;
+      }
+    }
+
+    .singup {
+      vertical-align: middle;
+    }
+  }
+
+
+  h1 {
+    margin: 50px auto;
+    position: relative;
+    float: left;
+    text-align: center;
+    letter-spacing: 1px;
+    font: $fontSize3 $fontFamilyBold;
+    color:$color7;
+  }
+
+  .promo {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+    min-width: 320px;
+    margin: auto;
+    text-align: center;
+    color: $color7;
+
+    h2 {
+      margin: 5px auto;
+      line-height: 35px;
+      text-transform: uppercase;
+      font: $fontSize1 $fontFamilyBold;
+    }
+
+    h3 {
+      width: 80%;
+      margin: 10px auto;
+      padding-top: 13px;
+      font: $fontSize4 $fontFamilyLight;
+    }
+
+    .findButton {
+      margin: 5px auto;
+      padding-top: 10px;
+      text-align: center;
+      width: 275px;
+      height: 38px;
+      border-radius: 20px;
+      border: solid $color2;
+      background-color: $color2;
+
+      a{
+        color: $color7;
+        font: $fontSize5 $fontFamilyBold;
+      }
+    }
+  }
+}
