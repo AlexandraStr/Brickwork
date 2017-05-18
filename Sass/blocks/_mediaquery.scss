@@ -1,0 +1,133 @@
+/* Media query */
+/* phone  */
+@include respond-to(handhelds) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoMobil, 0, 0);
+    background-size: cover;
+
+    .login_area, h1 {
+      width: 100%;
+    }
+  }
+
+
+  //-------------------Footer ---------------------
+  .footer_container {
+    .nav_links, h1, .partners, .disignedBy {
+      margin: 20px auto;
+      width: 100%;
+      clear: both;
+
+    }
+    .nav_links{
+      text-align: center;
+    }
+  }
+
+};
+/* wide phone */
+@include respond-to(wide-handhelds) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoMobil, 0, 0);
+    background-size: cover;
+
+    .login_area, h1 {
+      width: 100%;
+    }
+  }
+
+  //----------------------Footer ---------------------
+  .footer_container {
+    .nav_links, h1, .partners, .disignedBy {
+      margin: 20px auto;
+      width: 100%;
+      clear: both;
+    }
+    .nav_links {
+      text-align: center;
+    }
+  }
+};
+@include respond-to(notepad) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoTablet, 0, 0);
+    background-size: cover;
+
+    .login_area {
+      width: 180px;
+    }
+  }
+
+  //------------------------Footer --------------------
+  .footer_container {
+    h1, .partners, .disignedBy {
+      margin: auto;
+      width: 24%;
+      float: left;
+    }
+    .nav_links {
+      margin: auto 5%;
+      width: 80px;
+      float: left;
+      text-align: left;
+    }
+  }
+
+};
+
+@include respond-to(tablets) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoTablet, 0, 0);
+    background-size: cover;
+
+    .login_area {
+      width: 180px;
+    }
+  }
+
+
+  //----------------------Footer--------------------------
+  .footer_container {
+    h1, .partners, .disignedBy {
+      margin: auto;
+      width: 24%;
+      float: left;
+    }
+    .nav_links {
+      margin: auto 5%;
+      width: 80px;
+      float: left;
+      text-align: left;
+    }
+  }
+
+};
+@include respond-to(desktop) {
+  //-------------- Header--------------------
+  .header {
+    @include background($urlPromoTablet, 0, 0);
+
+    .login_area {
+      width: 180px;
+    }
+  }
+
+  //-----------------------Footer ----------------------
+  .footer_container {
+    h1, .partners, .disignedBy {
+      margin: auto;
+      width: 24%;
+      float: left;
+    }
+    .nav_links {
+      margin: auto 5%;
+      width: 80px;
+      float: left;
+      text-align: left;
+    }
+  }
+}

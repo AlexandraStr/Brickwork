@@ -27,16 +27,7 @@ module.exports = function(grunt) {
 
             }
         },
-        imagemin: {
-            dynamic: {
-                files: [{
-                    expand: true,
-                    cwd: 'images/',
-                    src: ['**/*.{png,jpg,gif}'],
-                    dest: 'img/'
-                }]
-            }
-        },
+
         sass: {
             dist: {
                 options: {
@@ -62,25 +53,18 @@ module.exports = function(grunt) {
                 options: {
                     spawn: false,
                 }
-            },
-            img:{
-                files: ['images/*.jpg','images/*.png'],
-                tasks: ['imagemin'],
-                options: {
-                    spawn: false,
-                }
             }
-        },
+
+        }
     });
 
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-contrib-sass');
   /*  grunt.loadNpmTasks('grunt-contrib-jshint'); */
 
-    grunt.registerTask('default', ['concat','uglify','imagemin','sass','watch']);
+    grunt.registerTask('default', ['concat','uglify','sass','watch']);
 
 
 

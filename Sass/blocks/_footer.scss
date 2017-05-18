@@ -1,0 +1,54 @@
+/*        Footer        */
+/*--------------------------------------------------------------------------------------------------*/
+.footer_container{
+  margin:20px auto;
+  padding: 30px;
+  position: relative;
+  border-top: solid 5px $color2;
+
+  h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    color: $color2;
+    font : $fontSize7 $fontFamilyBold;
+  }
+
+  .nav_links {
+
+    h2 {
+      color: #282828;
+      font : $fontSize5 $fontFamilyBold;
+      font-size: 14px;
+    }
+
+    a {
+      padding: 10px;
+      color: $color5;
+      font: $fontSize5 $fontFamilyLight;
+    }
+  }
+
+  .partners{
+    text-align: center;
+
+    a {
+      color: #282828;
+      font: $fontSize5 $fontFamilyBold;
+    }
+  }
+  .disignedBy {
+    color: $color5;
+    font-family: $fontFamilyBold;
+    font-size: 10px;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    .footer_img {
+      display: block;
+      margin-top: 10px;
+      width: 100%;
+
+    }
+  }
+}
