@@ -16,18 +16,18 @@
   .grid {
     margin: 0 auto;
     opacity:0;
-    transition:opacity 0.5s linear;
+   // transition:opacity 0.5s linear;
 
-     .grid-gutter {
-      width: 15px;
-    }
+
 
       .grid-item {
-        padding: 2px;
-        margin-bottom: 15px;
+      //  padding: 2px;
+      //  margin-bottom: 15px;
         transition-property: top;
         transition-property: left;
         transition-duration: 3s;
+        border-radius: 10px;
+     //   box-shadow: 2px 2px 4px 0 #ccc;
 
         a {
           position: absolute;
@@ -40,7 +40,6 @@
           display: block;
           width: 100%;
           border-radius: 10px;
-          box-shadow: 2px 2px 4px 0 #ccc;
         }
       }
     }

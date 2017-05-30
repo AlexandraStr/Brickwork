@@ -1,0 +1,39 @@
+/*        Search partners            */
+.search_partners{
+  margin: 40px auto;
+
+  form {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+  }
+
+  h1 {
+    color: $color3;
+    font: $fontSize2 $fontFamilyBold;
+    text-align: center;
+  }
+
+  p {
+    color: $color3;
+    font: $fontSize4 $fontFamilyBold;
+    text-align: center;
+  }
+
+  input {
+    margin: 5px auto;
+    color: $color6;
+    width: 278px;
+    height: 38px;
+    /*     if you want to set the height you need to put border for input     */
+    border: solid 1px $color5;
+    font: $fontSize5 $fontFamilyRegular;
+  }
+
+  .form_button {
+    color: #ffffff;
+    border-radius: 20px;
+    border: solid $color2;
+    background-color: $color2;
+  }
+}
